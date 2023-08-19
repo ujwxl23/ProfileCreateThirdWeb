@@ -8,13 +8,13 @@ import "./styles/globals.css";
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "ethereum";
+const activeChain = "mumbai";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <ThirdwebProvider activeChain={activeChain}>
+    <ThirdwebProvider activeChain={activeChain} clientId="a4034c1410f58a6b9d01010190b8c422">
       <App />
     </ThirdwebProvider>
   </React.StrictMode>
